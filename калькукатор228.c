@@ -4,6 +4,7 @@ double division(double a, double b, int* ErrorCode) {
         return a / b;
     if(b == 0)
         *ErrorCode = -1;
+    return 0;
 }
 int main(void) {
     double a = 0, b = 0, result = 0;
