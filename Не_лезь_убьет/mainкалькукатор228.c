@@ -46,6 +46,14 @@ int main(void) {
                 result = module(a);
                     printf("%lg\n", result);
                 break;
+            case 'sqrt':
+                result = sqrt(a, &ErrorCode);
+                if(ErrorCode == 0)
+                    printf("%lg\n", result);
+                if(ErrorCode != 0)
+                    printf("ай ай ай нинада так\n");
+                ErrorCode = 0;
+                break;
             case 'x' :
                 return 0;
                 break;
