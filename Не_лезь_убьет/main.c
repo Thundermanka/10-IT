@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "functions.c"
 /*главная фу-ия, сканирует a, b, ну она какбэ главная и управляет строем и у нее есть крутая переменная ErrorCode, ну и она сама крутая, вопщемб все */
 int main(void) {
     double a = 0, b = 0, result = 0;
