@@ -1,3 +1,11 @@
+/*фу-ия деления берет double a, b, выводит double, ошика при b == 0, тогда меняем и выводим код ошибки*/
+double division(double a, double b, int* ErrorCode) {
+    if(b != 0)
+        return a / b;
+    if(b == 0)
+        *ErrorCode = -1;
+    return 0;
+}
 /* это фу-ия модуля, берет double, a, затем выводит double */
 double module(double a) { 
     if(a > 0)
