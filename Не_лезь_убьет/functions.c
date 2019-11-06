@@ -32,7 +32,7 @@ int mod(int a, int b, int* ErrorCode){
         *ErrorCode = -1;
         return 0;}
 /*функция квадратного корня, берет double a, указатель на errorcode, выводит double, ошибка при a < 0, то указатель на ошипку*/
-double sqrt(double a, *ErrorCode) {
+double computesqrt(double a, *ErrorCode) {
     if(a >= 0)
         return sqrt(a);
     if(a < 0)
