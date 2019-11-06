@@ -46,7 +46,7 @@ int main(void) {
                 result = module(a);
                     printf("%lg\n", result);
                 break;
-            case 'sqrt':
+            case 's':
                 result = computesqrt(a, &ErrorCode);
                 if(ErrorCode == 0)
                     printf("%lg\n", result);
