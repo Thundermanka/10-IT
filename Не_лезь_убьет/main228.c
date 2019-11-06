@@ -47,7 +47,7 @@ int main(void) {
                     printf("%lg\n", result);
                 break;
             case 'sqrt':
-                result = sqrt(a, &ErrorCode);
+                result = computesqrt(a, &ErrorCode);
                 if(ErrorCode == 0)
                     printf("%lg\n", result);
                 if(ErrorCode != 0)
