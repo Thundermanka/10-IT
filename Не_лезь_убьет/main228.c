@@ -54,6 +54,10 @@ int main(void) {
                     printf("ай ай ай нинада так\n");
                 ErrorCode = 0;
                 break;
+            case 'A':
+                result = computearifmprogr(a,b)
+                return result;
+                break;
             case 'x' :
                 return 0;
                 break;
