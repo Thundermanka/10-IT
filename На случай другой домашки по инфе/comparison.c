@@ -16,5 +16,5 @@ int main(void) {
         min = d;
     
     printf("%d", min);
-    return min;
+    return 0;
 }
