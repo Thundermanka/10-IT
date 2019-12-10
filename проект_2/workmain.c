@@ -8,8 +8,11 @@ if(!isdigit(str[4])){
     *val = atoi(tmpStr);
     }
 }
-
+#include <stdio.h>
+#include <string.h>
 int main (int ARGC, char* ARGV[]){
+   int var = 0;
+   int val = 0;
 printf ("число аргументов равно %d", ARGC);
 char Var, Val; //Var отвечает за переменную, а Val за значение
 printf ("введите строку вида ./calc FUNCTION(y=b*x+c) SET(x=...),\n где в FUNCTION укажите b и c, а в SET укажите x \n");
