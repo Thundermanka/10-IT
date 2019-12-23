@@ -1,12 +1,23 @@
-int parseFunction(char* str, char* var1, char* var2, char* var3, char* val){ // val - это значение для переменных, поэтому одна и такая же как в parseSet
-    char tmpStr[10000];
-    if(!isdigit(str[10])){ 
-         *var1 = str[4];
-    for (int i = 12; i <= (strlen(str) - 1); i++){
-        tmpStr[i-12] = str[i];
-    }
-    *val = atoi(tmpStr);
-    }
-    
-    return *var1, *val;
+int parseFunction (char *str, int countArg, int* funcValK, int* funcValB, char* funcVarY, char* funcVarX, char* functSign){
+*funcVarY= str[9];
+for (int i=9;i<strlen(str);i++){
+if(isalpha(str[i])){
+*funcVarX=str[i];
+}
+}
+for (int i=9;i<strlen(str);i++){
+if (str[i] == "-" || str[i] == "+"){
+*functSign= str[i];
+if (!isdigit(str[i-1])){
+*funcValB = atoi(str[i+1]);
+}
+else{
+*funcValB = atoi(str[i-1]);
+}
+}
+if (str[i] == "*"){
+*funcValK = atoi(str[i-1]);
+}
+}
+return 0;
 }
