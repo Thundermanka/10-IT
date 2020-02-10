@@ -1,42 +1,31 @@
 #include <iostream>
 using namespace std;
-
 class luntik{
     private:
-    double x, Vx, y, Vy;
+    double x, Vx, y, Vy, Speed;
     double answ; // для вывода текущей координаты
     public:
     luntik()    //это конструктор:  1) у конструктора нет типа возвращаемого значения!
     //   2) имя должно быть таким как и у класса
     {
-        cout << "Работа конструктора при создании нового объекта: " << endl;//и здесь же их отобразим на экран
+        //cout << "Работа конструктора при создании нового объекта: "
         cout << "Я родился"<< endl;
     }
-};
-    /*void setAB() // с помощью этого метода изменим начальные значения заданные конструктором
-    {
-        cout << "Введите целое число а: ";
-        cin >> a;
-        cout << "Введите целое число b: ";
-        cin >> b;
-    }
- 
-    void getAB() //выведем на экран измененные значения
-    {
-        cout << "a = " << a << endl;
-        cout << "b = " << b << endl << endl;
-    }
-};
- 
-int main()
-{
-    setlocale(LC_ALL, "rus");
- 
-    AB obj1;     //конструктор сработает на данном этапе (во время создания объекта класса)
- 
-    obj1.setAB();   //присвоим новые значения переменным
-    obj1.getAB();   //и выведем их на экран
- 
-    AB obj2;     //конструктор сработает на данном этапе (во время создания 2-го объекта класса)
-return 0;
-}*/
+    int answ(double x, double y){
+        getx();
+        gety();
+       cout << x << y <<endl;
+   }
+    int speedChange(double Vx, double Vy) {
+       getx();
+       gety();
+       getVx();
+       getVy();
+       getSpeed(double Vx, double Vy){
+           
+       }
+   }
+}
+int main(){
+    int 
+}
