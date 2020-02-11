@@ -1,4 +1,4 @@
-#include <string>
+#include <cstring>
 #include<iostream>
  
 using namespace std;
@@ -7,8 +7,8 @@ int main (){
     int count = 0;
     string lat;
     cin >> lat;
-    for (int i = 0; i < lat.lenght();i++){
-        switch(lat[i]){
+    for (int i = 0; i < strlen(lat);i++){
+        switch(stlen(lat)){
          case 'M': 
             count += 1000;
             break;
